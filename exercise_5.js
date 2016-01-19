@@ -3,7 +3,7 @@ var path = require('path');
 
 var directory = fs.readdir(process.argv[2], function(err, list){
     if (err) throw err;
-    else {
+    else{
         for (var i = 0; i < list.length; i++){
             var ext_name = path.extname(list[i]).split("");
             ext_name.shift();            
